@@ -7,10 +7,10 @@
 package main
 
 import (
-	"github.com/acepanel/backup-template/internal/app"
-	"github.com/acepanel/backup-template/internal/bootstrap"
-	"github.com/acepanel/backup-template/internal/route"
-	"github.com/acepanel/backup-template/internal/service"
+	"github.com/acepanel/backup-ftp/internal/app"
+	"github.com/acepanel/backup-ftp/internal/bootstrap"
+	"github.com/acepanel/backup-ftp/internal/route"
+	"github.com/acepanel/backup-ftp/internal/service"
 )
 
 // Injectors from wire.go:
@@ -25,9 +25,9 @@ func initCli() (*app.Cli, error) {
 	if err != nil {
 		return nil, err
 	}
-	cliService := service.NewCliService(locale, koanf)
+	cliService := service.NewCliService(locale)
 	cli := route.NewCli(locale, cliService)
-	command := bootstrap.NewCli(locale, cli)
+	command := bootstrap.NewCli(cli)
 	appCli := app.NewCli(command)
 	return appCli, nil
 }

@@ -4,9 +4,8 @@ import (
 	"context"
 	"os"
 
+	"github.com/acepanel/backup-ftp/internal/helper"
 	"github.com/urfave/cli/v3"
-
-	"github.com/acepanel/backup-template/internal/helper"
 )
 
 type Cli struct {

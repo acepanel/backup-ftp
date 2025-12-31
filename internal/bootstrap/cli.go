@@ -4,13 +4,13 @@ import (
 	"github.com/leonelquinteros/gotext"
 	"github.com/urfave/cli/v3"
 
-	"github.com/acepanel/backup-template/internal/route"
+	"github.com/acepanel/backup-ftp/internal/route"
 )
 
 func NewCli(t *gotext.Locale, cmd *route.Cli) *cli.Command {
 	return &cli.Command{
-		Name:     "backup-plugin-template",
-		Usage:    t.Get("Template backup plugin for AcePanel"),
+		Name:     "backup-plugin-ftp",
+		Usage:    t.Get("FTP backup plugin for AcePanel"),
 		Commands: cmd.Commands(),
 	}
 }

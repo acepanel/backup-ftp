@@ -22,10 +22,7 @@ jobs:
           cache: true
           go-version: 'stable'
       - name: Install dependencies
-        run: |
-          go mod tidy
-          go install tool
-          ~/go/bin/xgotext -default app -pkg-tree ./cmd/app -out ./pkg/embed/locales
+        run: go mod tidy
       - name: Build ${{ matrix.goarch }}
         env:
           CGO_ENABLED: 0

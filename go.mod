@@ -1,4 +1,4 @@
-module github.com/acepanel/backup-template
+module github.com/acepanel/backup-ftp
 
 go 1.25.0
 

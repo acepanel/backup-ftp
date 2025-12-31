@@ -1,4 +1,4 @@
-# \<NAME\> Backup for [`AcePanel`](https://github.com/acepanel/panel)
+# FTP Backup for [`AcePanel`](https://github.com/acepanel/panel)
 
 This is a backup plugin for [`AcePanel`](https://github.com/acepanel/panel).
 

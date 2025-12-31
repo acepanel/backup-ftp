@@ -4,7 +4,7 @@ import (
 	"github.com/knadh/koanf/v2"
 	"github.com/leonelquinteros/gotext"
 
-	"github.com/acepanel/backup-template/pkg/embed"
+	"github.com/acepanel/backup-ftp/pkg/embed"
 )
 
 func NewT(conf *koanf.Koanf) (*gotext.Locale, error) {

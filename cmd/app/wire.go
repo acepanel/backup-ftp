@@ -5,10 +5,10 @@ package main
 import (
 	"github.com/google/wire"
 
-	"github.com/acepanel/backup-template/internal/app"
-	"github.com/acepanel/backup-template/internal/bootstrap"
-	"github.com/acepanel/backup-template/internal/route"
-	"github.com/acepanel/backup-template/internal/service"
+	"github.com/acepanel/backup-ftp/internal/app"
+	"github.com/acepanel/backup-ftp/internal/bootstrap"
+	"github.com/acepanel/backup-ftp/internal/route"
+	"github.com/acepanel/backup-ftp/internal/service"
 )
 
 // initCli init command line.
