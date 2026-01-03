@@ -25,9 +25,9 @@ func initCli() (*app.Cli, error) {
 	if err != nil {
 		return nil, err
 	}
-	cliService := service.NewCliService(locale)
+	cliService := service.NewCliService(locale, koanf)
 	cli := route.NewCli(locale, cliService)
-	command := bootstrap.NewCli(cli)
+	command := bootstrap.NewCli(locale, cli)
 	appCli := app.NewCli(command)
 	return appCli, nil
 }
